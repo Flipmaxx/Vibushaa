@@ -1,11 +1,12 @@
 
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <div className="w-full h-screen relative">
       {/* Desktop / Tablet Image */}
-      <img
-        src="/videos/B.jpg" // for larger screens
+      <Image
+        src="/videos/B.jpg"
         alt="Background desktop"
         fill
         priority
@@ -13,8 +14,8 @@ export default function Hero() {
       />
 
       {/* Mobile Image */}
-      <img
-        src="/videos/M.jpg" // put mobile version in /public/videos
+      <Image
+        src="/videos/M.jpg"
         alt="Background mobile"
         fill
         priority
