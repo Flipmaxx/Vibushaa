@@ -2,16 +2,24 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen flex items-center justify-center bg-black">
-      <video
-        src="/videos/logo.mp4"
-        className="w-full  h-screen object-cover "
-        autoPlay
-        loop
-        muted
-        playsInline
+    <div className="w-full h-screen relative">
+      {/* Desktop / Tablet Image */}
+      <Image
+        src="/videos/B.jpg" // for larger screens
+        alt="Background desktop"
+        fill
+        priority
+        className="object-cover hidden sm:block"
       />
-      <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg" alt="" />
+
+      {/* Mobile Image */}
+      <Image
+        src="/videos/M.jpg" // put mobile version in /public/videos
+        alt="Background mobile"
+        fill
+        priority
+        className="object-cover block sm:hidden"
+      />
     </div>
   );
 }
