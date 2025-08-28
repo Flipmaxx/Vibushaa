@@ -5,15 +5,9 @@ export default function Hero() {
   return (
     <div className="w-full h-screen relative">
       {/* Desktop / Tablet Image */}
-      <Image
-        src="/videos/B.jpg"
-        alt="Background desktop"
-        fill
-        priority
-        className="object-cover hidden sm:block"
-      />
+    <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg" alt="" />
 
-      {/* Mobile Image */}
+   
       <Image
         src="/videos/M.jpg"
         alt="Background mobile"
