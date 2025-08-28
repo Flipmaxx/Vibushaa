@@ -3,18 +3,12 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="w-full h-screen relative">
-      {/* Desktop / Tablet Image */}
-    <img src="/Videos/M.jpg" alt="" />
+    <div className="w-auto h-screen">
+  
+    <img src="/Videos/B.jpg" alt="" className="hidden md:inline w-screen object-cover h-screen" />
 
    
-      <Image
-        src="/videos/M.jpg"
-        alt="Background mobile"
-        fill
-        priority
-        className="object-cover block sm:hidden"
-      />
+    <img src="/Videos/M.jpg" alt="" className="md:hidden h-screen object-cover w-screen"/>
     </div>
   );
 }
