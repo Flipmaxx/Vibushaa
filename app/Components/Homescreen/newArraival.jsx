@@ -90,17 +90,19 @@ export default function NewArrival() {
           className="w-full group-hover:h-80 h-96 object-cover"
         />
         {/* Badge */}
-        {item.badge && (
-          <span
-            className={`absolute bottom-3 left-0 w-20 text-center text-xs px-3 py-2 text-white  ${
-              item.badgeType === "red"
-                ? "bg-[#2E1532]"
-                : "bg-gray-500/80"
-            }`}
-          >
-            {item.badge}
-          </span>
-        )}
+       {item.badge && (
+  <span
+    className={`absolute bottom-3 left-0 text-center text-xs px-3 py-2 rounded-sm text-white 
+      ${
+        item.badgeType === "red"
+          ? "bg-gradient-to-r from-[#2E1532] to-[#2E1532]/50"
+          : "bg-gradient-to-r from-gray-500/100 to-gray-500/50"
+      }`}
+  >
+    {item.badge}
+  </span>
+)}
+
         {/* Wishlist Icon */}
         <button className="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md hover:bg-gray-100">
           <Heart size={16} className="text-gray-600" />
