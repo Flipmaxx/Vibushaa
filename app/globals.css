@@ -13,15 +13,31 @@
 }
 
 @font-face {
-  font-family: "MyFont";
-  src: url("/Fonts/kinasha.otf") format("truetype");
-  font-weight: bold;
+  font-family: "Kinasha";
+  src: url("/Fonts/kinasha.otf") format("opentype"); 
+  font-weight: normal;
   font-style: normal;
-  font-display: swap; 
+  font-display: swap;
 }
 
-/* Optional: set as default font for the entire app */
-body {
-  font-family: "MyFont", sans-serif;
+@font-face {
+  font-family: "Roboto";
+  src: url("/Fonts/play.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+
+
+h1 {
+  font-family: "Kinasha", sans-serif; 
+}
+
+p,h2,h3 {
+  font-family: "Roboto", serif; 
+}
+
+span {
+  font-family: "Roboto", serif; 
+}

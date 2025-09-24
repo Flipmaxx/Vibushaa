@@ -59,9 +59,9 @@ export default function NewArrival() {
       {/* Section Header */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mb-10 relative z-10 gap-4">
         <div>
-          <h2 className="text-5xl  text-yellow-600 mb-2">
+          <h1 className="text-5xl  text-yellow-600 mb-2">
             New Arrival
-          </h2>
+          </h1>
           <p className="text-sm text-gray-500 max-w-lg">
             Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting
             Industry. Lorem Ipsum Has Been The Industry&apos;s Standard Dummy
@@ -119,7 +119,7 @@ export default function NewArrival() {
 
     {/* Product Info */}
     <div className="text-center text-sm mt-5 px-2">
-      <h1 className="font-medium text-gray-800">{item.title}</h1>
+      <h2 className="font-medium text-gray-800">{item.title}</h2>
       <div className="flex gap-4 items-center justify-center mt-2">
         <div className="relative inline-block text-gray-400 text-sm">
           <h1 className="line-through">{item.oldPrice}</h1>
