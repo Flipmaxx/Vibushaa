@@ -25,19 +25,19 @@ export default function ShippingCodes() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto bg-white py-14">
-      <div className="  grid grid-cols-2 md:grid-cols-4 gap-12 xl:gap-45 text-center px-6 xl:px-0">
+    <section className="max-w-7xl mx-auto bg-white py-14 px-3">
+      <div className="  grid grid-cols-4 gap-12 xl:gap-45 text-center px-6 xl:px-0">
         {features.map((item, index) => (
           <div key={index} className="flex flex-col items-center">
             <img
               src={item.image}
               alt={item.title}
-              className="w-14 h-14 xl:w-20 xl:h-20 mb-4 object-contain"
+              className="w-10 h-10 xl:w-20 xl:h-20 mb-4 object-contain"
             />
-            <h3 className="text-base md:text-lg font-semibold text-gray-800">
+            <h3 className="text-sm md:text-lg font-semibold text-gray-800">
               {item.title}
             </h3>
-            <p className="text-[11px] md:text-xs tracking-wide text-gray-500 uppercase">
+            <p className="text-[8px] md:text-xs tracking-wide text-gray-500 uppercase">
               {item.subtitle}
             </p>
           </div>

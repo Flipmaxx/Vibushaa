@@ -12,11 +12,11 @@ export default function Category() {
   ];
 
   return (
-    <div className="bg-white py-13 px-16 md:px-3 container mx-auto w-full  md:max-w-3xl lg:max-w-4xl xl:max-w-7xl">
+    <div className="bg-white py-13 px-6 md:px-3 container mx-auto w-full  md:max-w-3xl lg:max-w-4xl xl:max-w-7xl">
       <div className="flex space-x-4 sm:space-x-12 overflow-x-auto scrollbar-hide items-center justify-center">
         {categories.map((cat, idx) => (
           <div key={idx} className="flex-shrink-0 text-center">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-2 border-yellow-500 p-1 mx-auto overflow-hidden">
+            <div className="w-18 h-18 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-2 border-yellow-500 p-1 mx-auto overflow-hidden">
               <img
                 src={cat.img}
                 alt={cat.name}
