@@ -48,7 +48,7 @@ export default function Topbanner() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-150 md:h-screen overflow-hidden">
       <AnimatePresence>
         <motion.img
           key={current}
