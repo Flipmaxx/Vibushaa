@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import { motion } from "framer-motion";
 import {
   FiSearch,
   FiUser,
@@ -15,15 +16,31 @@ import {
 export default function Navbar() {
   const [categoryOpen, setCategoryOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [Flip, setFlip] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFlip(prev => !prev); // toggle flip state
+    }, 5000); // trigger every 4 seconds
+
+    return () => clearInterval(interval); // cleanup on unmount
+  }, []);
 
   return (
     <nav className="w-full bg-white shadow-sm sticky top-0 z-50">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Left: Logo */}
-          <div className="flex-shrink-0 flex items-center">
-            <img src="/Images/L1.png" alt="Vibusha's" className="h-10 w-auto" />
-          </div>
+     <div className="flex-shrink-0 flex items-center perspective-1000">
+      <motion.img
+        src="/Images/L1.png"
+        alt="Vibusha's"
+        className="h-10 w-auto"
+        animate={{ rotateY: Flip ? 360 : 0 }} // single flip
+        transition={{ duration: 1, ease: "easeInOut" }} // 1 second per flip
+      />
+    </div>
+
 
           {/* Desktop Middle Section */}
           <div className="hidden lg:flex flex-1 flex-col items-center space-y-2">

@@ -65,13 +65,13 @@ export default function Topbanner() {
       {/* Left / Right Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-5 top-1/2 -translate-y-1/2 bg-white/30 p-3 rounded-full hover:bg-white/50"
+        className=" hidden md:inline absolute left-5 top-1/2 -translate-y-1/2 bg-white/30 p-3 rounded-full hover:bg-white/50"
       >
         <ChevronLeft size={30} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-5 top-1/2 -translate-y-1/2 bg-white/30 p-3 rounded-full hover:bg-white/50"
+        className=" hidden md:inline absolute right-5 top-1/2 -translate-y-1/2 bg-white/30 p-3 rounded-full hover:bg-white/50"
       >
         <ChevronRight size={30} />
       </button>
