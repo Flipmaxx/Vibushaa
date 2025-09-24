@@ -92,11 +92,11 @@ export default function NewArrival() {
         {/* Badge */}
        {item.badge && (
   <span
-    className={`absolute bottom-3 left-0 text-center text-xs px-3 py-2 rounded-sm text-white 
+    className={`absolute bottom-3 left-0 text-center text-xs px-3 py-3 w-20  text-white 
       ${
         item.badgeType === "red"
-          ? "bg-gradient-to-r from-[#2E1532] to-[#2E1532]/50"
-          : "bg-gradient-to-r from-gray-500/100 to-gray-500/50"
+          ? "bg-gradient-to-r from-[#2E1532] to-[#2E1532]/10"
+          : "bg-gradient-to-r from-gray-500/100 to-gray-500/10"
       }`}
   >
     {item.badge}
