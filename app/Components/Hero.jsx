@@ -1,14 +1,18 @@
+import Category from "./Homescreen/Categories";
+import NewArrival from "./Homescreen/newArraival";
+import ShippingCodes from "./Homescreen/shippingCode";
+import Topbanner from "./Homescreen/Topbanner";
+import Navbar from "./Navbar/Nav";
 
-import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="w-auto h-screen">
-  
-    <img src="/Videos/B.jpg" alt="" className="hidden md:inline w-screen object-cover h-screen" />
-
-   
-    <img src="/Videos/M.jpg" alt="" className="md:hidden h-screen object-cover w-screen"/>
-    </div>
+  <div className="overflow-x-hidden">
+    <Navbar/>
+    <Topbanner/>
+    <Category/>
+    <ShippingCodes/>
+    <NewArrival/>
+  </div>
   );
 }
