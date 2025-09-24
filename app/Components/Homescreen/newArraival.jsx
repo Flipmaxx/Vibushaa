@@ -59,7 +59,7 @@ export default function NewArrival() {
       {/* Section Header */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mb-10 relative z-10 gap-4">
         <div>
-          <h2 className="text-xl font-semibold text-yellow-600 mb-2">
+          <h2 className="text-5xl  text-yellow-600 mb-2">
             New Arrival
           </h2>
           <p className="text-sm text-gray-500 max-w-lg">

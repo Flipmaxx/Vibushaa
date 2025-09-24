@@ -11,3 +11,17 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+@font-face {
+  font-family: "MyFont";
+  src: url("/Fonts/kinasha.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; 
+}
+
+/* Optional: set as default font for the entire app */
+body {
+  font-family: "MyFont", sans-serif;
+}
+
