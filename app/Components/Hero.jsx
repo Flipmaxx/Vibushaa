@@ -1,3 +1,4 @@
+import Footer from "./Footer/Footer";
 import Category from "./Homescreen/Categories";
 import HoverCard from "./Homescreen/HoverCard";
 import LatestCollections from "./Homescreen/LatestCollections";
@@ -26,6 +27,7 @@ export default function Hero() {
     <NewArrival2/>
     <Videobanner2/>
     <HoverCard/>
+    <Footer/>
   </div>
   );
 }
