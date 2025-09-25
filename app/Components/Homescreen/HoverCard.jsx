@@ -2,7 +2,7 @@
 
 export default function HoverCard() {
   return (
-    <section className="relative w-full h-auto py-16">
+    <section className="relative w-full h-auto py-16 xl:py-20">
 
       <div className="relative max-w-7xl mx-auto px-4 xl:px-0">
         {/* Heading */}
@@ -37,13 +37,30 @@ export default function HoverCard() {
               />
 
               {/* Hover Card */}
-              <div className="absolute bottom-2 left-2 right-2 bg-white/90 p-4 rounded-2xl  
-                              opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 
-                              transition-all duration-300">
-                <h3 className="font-semibold text-gray-900">Manju Inspired Lotus Choker</h3>
-                <p className="text-gray-500 line-through text-sm">₹2,529</p>
-                <p className="text-green-600 font-semibold">From ₹1,897</p>
-              </div>
+        <div
+  className="absolute bottom-2 left-2 right-2 bg-white/90 p-4 rounded-2xl  
+             opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 
+             transition-all duration-300"
+>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center h-[8vh]">
+    {/* Product Image */}
+    <div className="flex justify-center lg:justify-center">
+      <img src="./Images/p1.png" alt="Product" className="w-30 h-20 object-cover" />
+    </div>
+
+    {/* Product Info */}
+    <div className="text-center lg:text-left">
+      <h3 className="font-semibold text-gray-900 text-xs sm:text-xs">
+        Manju Inspired Lotus Choker
+      </h3>
+     <div className="flex gap-2">
+         <p className="text-gray-500 line-through text-xs sm:text-xs">₹2,529</p>
+      <p className="text-green-600 font-semibold text-xs sm:text-xs">From ₹1,897</p>
+     </div>
+    </div>
+  </div>
+</div>
+
             </div>
           ))}
         </div>
