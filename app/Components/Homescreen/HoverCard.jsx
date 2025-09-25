@@ -17,10 +17,10 @@ export default function HoverCard() {
         {/* Video Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            "/Videos/v1.mp4",
-            "/Videos/v2.mp4",
-            "/Videos/v1.mp4",
-            "/Videos/v2.mp4",
+            "/Videos/V1.mp4",
+            "/Videos/V2.mp4",
+            "/Videos/V1.mp4",
+            "/Videos/V2.mp4",
           ].map((video, idx) => (
             <div
               key={idx}
