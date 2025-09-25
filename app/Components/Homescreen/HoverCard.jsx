@@ -42,7 +42,7 @@ export default function HoverCard() {
              opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 
              transition-all duration-300"
 >
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center h-[8vh]">
+  <div className="grid grid-cols-2 lg:grid-cols-2 gap-5 items-center h-[8vh]">
     {/* Product Image */}
     <div className="flex justify-center lg:justify-center">
       <img src="./Images/p1.png" alt="Product" className="w-30 h-20 object-cover" />
